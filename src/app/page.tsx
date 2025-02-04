@@ -129,11 +129,11 @@ const page = () => {
   );
 }
 
-function Feature({ icon, title }) {
+function Feature({ icon, title }: { icon: React.ReactNode; title: string }) {
   return (
     <div className="bg-gray-100 p-6 rounded-lg shadow text-center">
       <div className="text-4xl">{icon}</div>
-      <h4 className="mt-4 font-bold">{title}</h4>
+      <h3 className="text-lg font-semibold">{title}</h3>
     </div>
   );
 }
